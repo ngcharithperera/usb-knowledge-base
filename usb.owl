@@ -12,6 +12,65 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://www.w3.org/ns/sosa/</Import>
+    <Declaration>
+        <NamedIndividual IRI="#Circulation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Urban"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#School_of_Computing_Science"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SAGE_Faculty_Office"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#General"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Estate_Support_Service"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Common_User"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Timetabling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Occupant"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Occupant"/>
+        <NamedIndividual IRI="#Circulation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Occupant"/>
+        <NamedIndividual IRI="#Common_User"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Occupant"/>
+        <NamedIndividual IRI="#Estate_Support_Service"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Occupant"/>
+        <NamedIndividual IRI="#General"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Occupant"/>
+        <NamedIndividual IRI="#SAGE_Faculty_Office"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Occupant"/>
+        <NamedIndividual IRI="#School_of_Computing_Science"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Occupant"/>
+        <NamedIndividual IRI="#Timetabling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Occupant"/>
+        <NamedIndividual IRI="#Urban"/>
+    </ClassAssertion>
 </Ontology>
 
 
