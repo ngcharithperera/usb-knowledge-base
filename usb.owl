@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.urbanobservatory.ac.uk/ontologies/usb">
+    <Prefix name="" IRI="http://www.urbanobservatory.ac.uk/ontologies/usb"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -39,6 +40,14 @@
     <Declaration>
         <Class IRI="#Occupant"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/ns/sosa/Actuator"/>
+        <Class IRI="https://w3id.org/seas/Actuator"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/ns/sosa/Sensor"/>
+        <Class IRI="https://w3id.org/seas/Sensor"/>
+    </EquivalentClasses>
     <ClassAssertion>
         <Class IRI="#Occupant"/>
         <NamedIndividual IRI="#Circulation"/>
