@@ -56,6 +56,12 @@
         <NamedIndividual IRI="#Floor_6"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Room_6_011"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_012"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#General"/>
     </Declaration>
     <Declaration>
@@ -119,6 +125,14 @@
     <ClassAssertion>
         <Class IRI="#Occupant"/>
         <NamedIndividual IRI="#General"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#MeetingRoom"/>
+        <NamedIndividual IRI="#Room_6_011"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_012"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Occupant"/>
