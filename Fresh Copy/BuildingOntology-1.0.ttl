@@ -734,14 +734,144 @@ seas:ZeroEnergyBuilding a owl:Class ;
 	rdfs:label "Nollaenergiatalo"@fi , "ZeroEnergyBuilding"@en ;
 	vs:term_status "testing" .
 # 
+# https://w3id.org/seas/BuildingOntology#AcademicOffice
+
+:AcademicOffice a owl:Class ;
+	rdfs:subClassOf seas:Office .
+# 
+# https://w3id.org/seas/BuildingOntology#BreakoutSpace
+
+:BreakoutSpace a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#ChangingShowerRoom
+
+:ChangingShowerRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Circulation
+
+:Circulation a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#CleanersStore
+
+:CleanersStore a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
 # https://w3id.org/seas/BuildingOntology#Core
 
 :Core a owl:Class ;
 	rdfs:subClassOf seas:BuildingSpace .
 # 
+# https://w3id.org/seas/BuildingOntology#DiningRoom
+
+:DiningRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#EquipmentMaterialsStore
+
+:EquipmentMaterialsStore a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Exhibition
+
+:Exhibition a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#GeneralOffice
+
+:GeneralOffice a owl:Class ;
+	rdfs:subClassOf seas:Office .
+# 
+# https://w3id.org/seas/BuildingOntology#Kitchen
+
+:Kitchen a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#LectureTheatre
+
+:LectureTheatre a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#LightLaboratory
+
+:LightLaboratory a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#MeetingRoom
+
+:MeetingRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#NonAcademicOffice
+
+:NonAcademicOffice a owl:Class ;
+	rdfs:subClassOf seas:Office .
+# 
 # https://w3id.org/seas/BuildingOntology#PlantRoom
 
 :PlantRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#PostgraduateRoom
+
+:PostgraduateRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Reception
+
+:Reception a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#ResearchOffice
+
+:ResearchOffice a owl:Class ;
+	rdfs:subClassOf seas:Office .
+# 
+# https://w3id.org/seas/BuildingOntology#SocialLearningSpace
+
+:SocialLearningSpace a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#SpecialistServicingLaboratory
+
+:SpecialistServicingLaboratory a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#StaffCommonRoom
+
+:StaffCommonRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Studio
+
+:Studio a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#StudyRoom
+
+:StudyRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#TeachingRoom
+
+:TeachingRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Toilet
+
+:Toilet a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Works
+
+:Works a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Workshop
+
+:Workshop a owl:Class ;
 	rdfs:subClassOf seas:Room .
 # 
 # 
