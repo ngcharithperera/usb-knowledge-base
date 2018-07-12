@@ -17,28 +17,52 @@
         <NamedIndividual IRI="#Circulation"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Floor_G"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SAGE_Faculty_Office"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Estate_Support_Service"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Occupant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_R"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Urban"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#School_of_Computing_Science"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SAGE_Faculty_Office"/>
+        <NamedIndividual IRI="#Floor_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_6"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#General"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Estate_Support_Service"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Common_User"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Timetabling"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Occupant"/>
+        <NamedIndividual IRI="#Common_User"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://www.w3.org/ns/sosa/Actuator"/>
@@ -59,6 +83,38 @@
     <ClassAssertion>
         <Class IRI="#Occupant"/>
         <NamedIndividual IRI="#Estate_Support_Service"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/Floor"/>
+        <NamedIndividual IRI="#Floor_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/Floor"/>
+        <NamedIndividual IRI="#Floor_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/Floor"/>
+        <NamedIndividual IRI="#Floor_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/Floor"/>
+        <NamedIndividual IRI="#Floor_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/Floor"/>
+        <NamedIndividual IRI="#Floor_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/Floor"/>
+        <NamedIndividual IRI="#Floor_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/Floor"/>
+        <NamedIndividual IRI="#Floor_G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/Floor"/>
+        <NamedIndividual IRI="#Floor_R"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Occupant"/>
