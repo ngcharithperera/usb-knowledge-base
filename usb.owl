@@ -38,16 +38,25 @@
         <NamedIndividual IRI="#Room_6_014"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Room_6_036"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Floor_5"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_016"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Room_6_038"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Room_6_010"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_022"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_034"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_012"/>
@@ -92,6 +101,12 @@
         <NamedIndividual IRI="#Room_6_015"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Room_6_037"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_039"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Floor_6"/>
     </Declaration>
     <Declaration>
@@ -104,10 +119,19 @@
         <NamedIndividual IRI="#Room_6_011"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Room_6_033"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Room_6_023"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_035"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_019"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Common_User"/>
@@ -216,6 +240,10 @@
         <NamedIndividual IRI="#Room_6_018"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#StudyRoom"/>
+        <NamedIndividual IRI="#Room_6_019"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
         <NamedIndividual IRI="#Room_6_020"/>
     </ClassAssertion>
@@ -238,6 +266,34 @@
     <ClassAssertion>
         <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
         <NamedIndividual IRI="#Room_6_025"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_033"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_034"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_035"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_036"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_037"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_038"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_039"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Occupant"/>
