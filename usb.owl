@@ -14,31 +14,19 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://www.w3.org/ns/sosa/</Import>
     <Declaration>
-        <NamedIndividual IRI="#Circulation"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Floor_G"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#SAGE_Faculty_Office"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Estate_Support_Service"/>
+        <NamedIndividual IRI="#Room_6_020"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Floor_3"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Floor_4"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Floor_1"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Occupant"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Floor_2"/>
+        <NamedIndividual IRI="#Floor_1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Floor_R"/>
@@ -47,28 +35,85 @@
         <NamedIndividual IRI="#Urban"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#School_of_Computing_Science"/>
+        <NamedIndividual IRI="#Room_6_014"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Floor_5"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Floor_6"/>
+        <NamedIndividual IRI="#Room_6_016"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Room_6_011"/>
+        <NamedIndividual IRI="#Room_6_010"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_022"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_012"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Room_6_024"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#General"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_018"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Timetabling"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Room_6_008"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Circulation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_G"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Estate_Support_Service"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_025"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#School_of_Computing_Science"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_015"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_017"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_021"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_011"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_023"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_013"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Common_User"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_009"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://www.w3.org/ns/sosa/Actuator"/>
@@ -127,12 +172,72 @@
         <NamedIndividual IRI="#General"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_008"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_009"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_010"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="https://w3id.org/seas/BuildingOntology#MeetingRoom"/>
         <NamedIndividual IRI="#Room_6_011"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
         <NamedIndividual IRI="#Room_6_012"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_013"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_014"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_015"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_016"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_017"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_018"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_021"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_022"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_023"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_024"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <NamedIndividual IRI="#Room_6_025"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Occupant"/>
