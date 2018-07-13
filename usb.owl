@@ -104,6 +104,9 @@
         <NamedIndividual IRI="#Room_6_037"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Room_6_005"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Room_6_039"/>
     </Declaration>
     <Declaration>
@@ -194,6 +197,10 @@
     <ClassAssertion>
         <Class IRI="#Occupant"/>
         <NamedIndividual IRI="#General"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/seas/BuildingOntology#Toilet"/>
+        <NamedIndividual IRI="#Room_6_005"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
