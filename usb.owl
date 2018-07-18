@@ -20,19 +20,25 @@
         <NamedIndividual IRI="#CIM_Status"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#LTHW_Flow_Temp"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#SAGE_Faculty_Office"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Actual_Cooling_Set_point"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Chilled_Water_Bypass_Status"/>
+        <NamedIndividual IRI="#Zone_Occupied"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Room_6_020"/>
+        <NamedIndividual IRI="#Fire_Alarm"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Floor_3"/>
+        <NamedIndividual IRI="#PIR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flow_Temperature"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Urban"/>
@@ -41,19 +47,19 @@
         <NamedIndividual IRI="#Room_6_036"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Room_6_016"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Room_6_028"/>
+        <NamedIndividual IRI="#Loop_Flow_Proven"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_012"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Room_6_024"/>
+        <NamedIndividual IRI="#L3_to_N"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CHW_Pump_Mode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_024"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Chilled_Beam_Sec_Flow_Temp"/>
@@ -62,13 +68,19 @@
         <NamedIndividual IRI="#General"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Flow_Rate"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#CHW_Isolation_Valve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LTHW_Pump_Enable"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_008"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Chilled_water_bypass_valve_position"/>
+        <NamedIndividual IRI="#Toilet_Extract_Fan_Enable"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Circulation"/>
@@ -77,28 +89,28 @@
         <NamedIndividual IRI="#Alarm_Reset"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Chilled_Beam_Control_Valve"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Estate_Support_Service"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Floor_4"/>
+        <NamedIndividual IRI="#Heating_Index_Pressure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Supply_Air_Temp"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CHW_Speed"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Room_6_015"/>
+        <NamedIndividual IRI="#Holiday_Switch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit_Operational"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#School_of_Computing_Science"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Room_6_027"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Room_6_039"/>
+        <NamedIndividual IRI="#LTHW_Pump_Speed"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_011"/>
@@ -116,9 +128,6 @@
         <NamedIndividual IRI="#Control_Status_Test"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Comfort_Cooling_Set_Point_Write"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Common_User"/>
     </Declaration>
     <Declaration>
@@ -128,28 +137,37 @@
         <NamedIndividual IRI="#Comfort_Heating_Set_Point_Write"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CHW_Return_Temp"/>
+        <NamedIndividual IRI="#LTHW_Pump_BACnet_Enable"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Alarm_B_Active"/>
+        <NamedIndividual IRI="#Toilet_Extract_Fan_Speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Supply_Air_Humidity_Set_point"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mode_Status"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eco_Cooling_Set_Point_Write"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Actual_Control_Mode"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CHW_Pump_Fault"/>
+        <NamedIndividual IRI="#Room_6_030"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Room_6_030"/>
+        <NamedIndividual IRI="#LTHW_Speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Supply_Air_Flow"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Floor_1"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Occupant"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Cooling_Coil_Valve"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Floor_R"/>
@@ -164,13 +182,217 @@
         <NamedIndividual IRI="#Room_6_038"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Floor_5"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Chilled_Beam_Low_Limit"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Actual_Heating_Set_point"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dampers_Operational"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Heat_Pump_Enable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Extract_Air_Flow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CHW_Pump_Speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hours_Run"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CHW_Pump_Alarm_Reset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fan_Speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LTHW_Secondary_Flow_Temp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Supply_Air_Filter_Pressure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Power"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frequency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CHW_Pump_Enable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Extract_Fan_Fault"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Heating_Coil_Valve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_025"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_037"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cooling_Valve_Position"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pre_Cooling_Active"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thermal_Wheel_Speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Extract_Air_Temp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OAT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Extract_Air_Filter_Pressure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_009"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alarm_A_Active"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LTHW_Pump_Alarm_Reset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chilled_Water_Bypass_Status"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Supply_Air_Filter_Alarm_Limit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Extract_Fan_High_Speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_016"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_028"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Heating_Coil_Temperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LTHW_Isolation_Valve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Return_Temperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chilled_water_bypass_valve_position"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Max_Room_Temp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chilled_Beam_Control_Valve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Heat_Pump_Mode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LTHW_Pump_Fault"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Outside_Air_Temp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_015"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_027"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_6_039"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Occupancy_Sensor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#On_Off_Mode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comfort_Cooling_Set_Point_Write"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Supply_Air_Humidity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit_Enable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Min_Room_Temp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Energy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Operating_mode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Supply_Air_Fan_Speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#L1_to_N"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Loop_Flow_DPS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CHW_Return_Temp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alarm_B_Active"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Serious_Alarm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toilet_Solenoild_Valve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CHW_Pump_Fault"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LTHW_Return_Temp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cooling_Coil_Valve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LTHW_Set_Point"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pump_Change_Over_Requested"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eco_Heating_Set_Point_Write"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor_5"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_010"/>
@@ -179,7 +401,16 @@
         <NamedIndividual IRI="#Room_6_022"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Not_Serious_Alarm"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Room_6_034"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pre_Cooling_Set_Point_Write"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Heating_Valve_Position"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_018"/>
@@ -194,31 +425,28 @@
         <NamedIndividual IRI="#Chilled_Water_Set_Point"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CHW_Pump_Speed"/>
+        <NamedIndividual IRI="#Extract_Air_Fan_Speed"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Floor_G"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CHW_Pump_Alarm_Reset"/>
+        <NamedIndividual IRI="#Mode_Input"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Extract_Air_Filter_Alarm_Limit"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Chilled_Water_Pump_BACnet_Enable"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CHW_Pump_Enable"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Condensate_Alarm"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Floor_2"/>
+        <NamedIndividual IRI="#LTHW_Pump_Mode"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Room_6_025"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Room_6_037"/>
+        <NamedIndividual IRI="#Supply_Fan_High_Speed"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_005"/>
@@ -230,22 +458,25 @@
         <NamedIndividual IRI="#Room_6_017"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Window_Alarm"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Room_6_021"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_033"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Room_6_013"/>
+        <NamedIndividual IRI="#Supply_Air_Temp_Set_point"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Operating_Set_Point"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cooling_Coil_Temperature"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Alarm_A_Active"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Room_6_009"/>
+        <NamedIndividual IRI="#L2_to_N"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/seas/Sensor"/>
@@ -394,8 +625,64 @@
         <NamedIndividual IRI="#Cooling_Coil_Valve"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Cooling_Valve_Position"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Dampers_Operational"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Eco_Cooling_Set_Point_Write"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Eco_Heating_Set_Point_Write"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Energy"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Occupant"/>
         <NamedIndividual IRI="#Estate_Support_Service"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Extract_Air_Fan_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Extract_Air_Filter_Alarm_Limit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Extract_Air_Filter_Pressure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Extract_Air_Flow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Extract_Air_Temp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Extract_Fan_Fault"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Extract_Fan_High_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Fan_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Fire_Alarm"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://w3id.org/seas/Floor"/>
@@ -430,8 +717,188 @@
         <NamedIndividual IRI="#Floor_R"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Flow_Rate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Flow_Temperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Frequency"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Occupant"/>
         <NamedIndividual IRI="#General"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Heat_Pump_Enable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Heat_Pump_Mode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Heating_Coil_Temperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Heating_Coil_Valve"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Heating_Index_Pressure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Heating_Valve_Position"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Holiday_Switch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Hours_Run"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#L1_to_N"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#L2_to_N"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#L3_to_N"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#LTHW_Flow_Temp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#LTHW_Isolation_Valve"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#LTHW_Pump_Alarm_Reset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#LTHW_Pump_BACnet_Enable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#LTHW_Pump_Enable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#LTHW_Pump_Fault"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#LTHW_Pump_Mode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#LTHW_Pump_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#LTHW_Return_Temp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#LTHW_Secondary_Flow_Temp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#LTHW_Set_Point"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#LTHW_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Loop_Flow_DPS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Loop_Flow_Proven"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Max_Room_Temp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Min_Room_Temp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Mode_Input"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Mode_Status"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Not_Serious_Alarm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#OAT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Occupancy_Sensor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#On_Off_Mode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Operating_Set_Point"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Operating_mode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Outside_Air_Temp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#PIR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Power"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Pre_Cooling_Active"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Pre_Cooling_Set_Point_Write"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Pump_Change_Over_Requested"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Return_Temperature"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://w3id.org/seas/BuildingOntology#Toilet"/>
@@ -562,12 +1029,84 @@
         <NamedIndividual IRI="#School_of_Computing_Science"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Serious_Alarm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Supply_Air_Fan_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Supply_Air_Filter_Alarm_Limit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Supply_Air_Filter_Pressure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Supply_Air_Flow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Supply_Air_Humidity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Supply_Air_Humidity_Set_point"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Supply_Air_Temp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Supply_Air_Temp_Set_point"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Supply_Fan_High_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Thermal_Wheel_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Occupant"/>
         <NamedIndividual IRI="#Timetabling"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Toilet_Extract_Fan_Enable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Toilet_Extract_Fan_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Toilet_Solenoild_Valve"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Unit_Enable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Unit_Operational"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Occupant"/>
         <NamedIndividual IRI="#Urban"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Window_Alarm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Zone_Occupied"/>
     </ClassAssertion>
 </Ontology>
 

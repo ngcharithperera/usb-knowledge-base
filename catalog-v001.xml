@@ -3,6 +3,6 @@
     <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/sosa/" uri="sosa.ttl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/seas/BuildingOntology-1.0" uri="Fresh%20Copy/BuildingOntology-1.0.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1531915959852" name="http://www.urbanobservatory.ac.uk/ontologies/usb" uri="usb.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1531917965034" name="http://www.urbanobservatory.ac.uk/ontologies/usb" uri="usb.owl"/>
     </group>
 </catalog>
