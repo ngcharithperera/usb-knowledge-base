@@ -14,10 +14,19 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://www.w3.org/ns/sosa/</Import>
     <Declaration>
+        <NamedIndividual IRI="#CHW_Flow_Temp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CIM_Status"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#SAGE_Faculty_Office"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Actual_Cooling_Set_point"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chilled_Water_Bypass_Status"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_020"/>
@@ -44,10 +53,22 @@
         <NamedIndividual IRI="#Room_6_024"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CHW_Pump_Mode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chilled_Beam_Sec_Flow_Temp"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#General"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CHW_Isolation_Valve"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Room_6_008"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chilled_water_bypass_valve_position"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Circulation"/>
@@ -56,10 +77,16 @@
         <NamedIndividual IRI="#Alarm_Reset"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Chilled_Beam_Control_Valve"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Estate_Support_Service"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Floor_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CHW_Speed"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_015"/>
@@ -80,7 +107,16 @@
         <NamedIndividual IRI="#Room_6_023"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Chilled_Water_Index_Pressure_Sensor"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Room_6_035"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Control_Status_Test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comfort_Cooling_Set_Point_Write"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Common_User"/>
@@ -89,10 +125,19 @@
         <NamedIndividual IRI="#Room_6_019"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Comfort_Heating_Set_Point_Write"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CHW_Return_Temp"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Alarm_B_Active"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Actual_Control_Mode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CHW_Pump_Fault"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_030"/>
@@ -102,6 +147,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Occupant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cooling_Coil_Valve"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Floor_R"/>
@@ -117,6 +165,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Floor_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chilled_Beam_Low_Limit"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Actual_Heating_Set_point"/>
@@ -137,7 +188,28 @@
         <NamedIndividual IRI="#Timetabling"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Chilled_Valve_Position"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chilled_Water_Set_Point"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CHW_Pump_Speed"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Floor_G"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CHW_Pump_Alarm_Reset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chilled_Water_Pump_BACnet_Enable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CHW_Pump_Enable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Condensate_Alarm"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Floor_2"/>
@@ -165,6 +237,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room_6_013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cooling_Coil_Temperature"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Alarm_A_Active"/>
@@ -211,12 +286,112 @@
         <NamedIndividual IRI="#Alarm_Reset"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#CHW_Flow_Temp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#CHW_Isolation_Valve"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#CHW_Pump_Alarm_Reset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#CHW_Pump_Enable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#CHW_Pump_Fault"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#CHW_Pump_Mode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#CHW_Pump_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#CHW_Return_Temp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#CHW_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#CIM_Status"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Chilled_Beam_Control_Valve"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Chilled_Beam_Low_Limit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Chilled_Beam_Sec_Flow_Temp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Chilled_Valve_Position"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Chilled_Water_Bypass_Status"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Chilled_Water_Index_Pressure_Sensor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Chilled_Water_Pump_BACnet_Enable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Chilled_Water_Set_Point"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Chilled_water_bypass_valve_position"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Occupant"/>
         <NamedIndividual IRI="#Circulation"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Comfort_Cooling_Set_Point_Write"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Comfort_Heating_Set_Point_Write"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Occupant"/>
         <NamedIndividual IRI="#Common_User"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Condensate_Alarm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Control_Status_Test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Cooling_Coil_Temperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <NamedIndividual IRI="#Cooling_Coil_Valve"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Occupant"/>
