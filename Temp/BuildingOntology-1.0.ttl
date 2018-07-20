@@ -1,0 +1,924 @@
+@prefix : <https://w3id.org/seas/BuildingOntology#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix ifc: <http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_TC1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix seas: <https://w3id.org/seas/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix gbxml: <http://www.gbxml.org/schema#> .
+@prefix saref: <http://ontology.tno.nl/saref#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fiemser: <http://sites.google.com/site/smartappliancesproject/ontologies/fiemser#> .
+
+seas:BuildingOntology a owl:Ontology ;
+	owl:versionIRI seas:BuildingOntology-1.0 ;
+	owl:imports seas:ZoneOntology ;
+	dcterms:description """The SEAS Building ontology describes a taxonomy of buildings, building spaces, and rooms.
+
+Some categorizations are based on the energy efficiency related to their insulation etc., although the actual values for classes depend the country specific regulations and geographical locations.
+
+Other categorizations are based on occupancy and activities. There is no single accepted categorization available. This taxonomy uses some types selected from:
+
+- International building occupancy based categories (USA)
+- The Classification of Types of Constructions (EU)
+- Finnish building categorization VTJ2000 (Finland)
+- Wikipedia category page for Rooms: https://en.wikipedia.org/wiki/Category:Rooms
+
+This ontology should limit the overlap with the following existing specialized ontologies:
+
+- [FIEMSER ontology](http://sites.google.com/site/smartappliancesproject/ontologies/fiemser#).
+- [gbXML ontology](http://www.gbxml.org/).
+- [ifcOWL ontology](http://www.buildingsmart-tech.org/ifcOWL/IFC4), which is a OWL version of the Building Information Model standard.
+- the potential ontology that might be developed in the context of the [Linked Building Data community group](https://www.w3.org/community/lbd/), or its successor Working Group.
+"""@en ;
+	vann:preferredNamespacePrefix "seas" ;
+	owl:versionInfo "v1.0" ;
+	dcterms:contributor _:genid1 .
+
+_:genid1 a foaf:Person ;
+	foaf:name "Francisco Silva" .
+
+seas:BuildingOntology dcterms:contributor _:genid2 .
+
+_:genid2 a foaf:Person ;
+	foaf:name "Brigida Teixeira" .
+
+seas:BuildingOntology dcterms:title "The SEAS Building Ontology"@en ;
+	dcterms:issued "2016-01-26"^^xsd:date ;
+	owl:priorVersion seas:BuildingOntology-0.9 ;
+	dcterms:creator <http://www.vtt.fi/JarmoKalaoja> ;
+	vann:preferredNamespaceUri <https://w3id.org/seas/> ;
+	dcterms:contributor _:genid3 .
+
+_:genid3 a foaf:Person ;
+	foaf:name "Gabriel Santos" .
+
+seas:BuildingOntology dcterms:modified "2016-09-26"^^xsd:date ;
+	dcterms:creator <http://www.maxime-lefrancois.info/me#> ;
+	dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+
+dcterms:contributor a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/creator
+
+dcterms:creator a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/description
+
+dcterms:description a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/issued
+
+dcterms:issued a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/license
+
+dcterms:license a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/modified
+
+dcterms:modified a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/title
+
+dcterms:title a owl:AnnotationProperty .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+
+vs:term_status a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/name
+
+foaf:name a owl:DatatypeProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+
+voaf:Vocabulary a owl:Class .
+# 
+# http://xmlns.com/foaf/0.1/Person
+
+foaf:Person a owl:Class .
+# 
+# https://w3id.org/seas/AssemblyBuilding
+
+seas:AssemblyBuilding a owl:Class ;
+	rdfs:subClassOf seas:NonResidentalBuilding ;
+	rdfs:comment "places used for people gathering for entertainment, worship, and eating or drinking. Examples: churches, restaurants."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "AssemblyBuilding"@en , "Kokoontumisrakennus"@fi ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Attic
+
+seas:Attic a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "the part of a building, especially of a house, directly under a roof; garret."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Attic"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Balcony
+
+seas:Balcony a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpace ;
+	rdfs:comment "An accessible structure extending from a building, especially outside a window."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Balcony"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Basement
+
+seas:Basement a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "A story of a building, partly or wholly underground."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Basement"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Bathroom
+
+seas:Bathroom a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "Bathroom is mainly used for bathing &amp; washing up related activities."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Bathroom"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Bedroom
+
+seas:Bedroom a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "Bedroom is used mainly for sleeping."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Bedroom"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Building
+
+seas:Building a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpace , seas:Construction , seas:Zone ;
+	rdfs:comment "Buildings are roofed constructions which can be used separately, have been built for permanent purposes, can be entered by persons and are suitable or intended for protecting persons, animals or objects."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Building"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/BuildingSpace
+
+seas:BuildingSpace a owl:Class ;
+	rdfs:subClassOf seas:Zone ;
+	rdfs:comment "A Space is a 3D volume bounded by surfaces. According to the FIEMSER definition, a building space in SAREF defines the physical spaces of the building."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "BuildingSpace"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/BuildingSpaceConnection
+
+seas:BuildingSpaceConnection a owl:Class ;
+	rdfs:subClassOf seas:ZoneConnection , _:genid4 .
+
+_:genid4 a owl:Restriction ;
+	owl:onProperty seas:connectsSystem ;
+	owl:allValuesFrom seas:BuildingSpace .
+
+seas:BuildingSpaceConnection rdfs:subClassOf _:genid5 .
+
+_:genid5 a owl:Restriction ;
+	owl:onProperty seas:connectsSystemAt ;
+	owl:allValuesFrom seas:BuildingSpaceFrontier .
+
+seas:BuildingSpaceConnection rdfs:comment "Connection between two building spaces, where they may potentially exchange heat, humidity, agents."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Building Space Connection"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/BuildingSpaceFrontier
+
+seas:BuildingSpaceFrontier a owl:Class ;
+	rdfs:subClassOf seas:ZoneFrontier , _:genid6 .
+
+_:genid6 a owl:Restriction ;
+	owl:onProperty seas:connectionPointOf ;
+	owl:allValuesFrom seas:BuildingSpace .
+
+seas:BuildingSpaceFrontier rdfs:subClassOf _:genid7 .
+
+_:genid7 a owl:Restriction ;
+	owl:onProperty seas:connectsSystemThrough ;
+	owl:allValuesFrom seas:BuildingSpaceConnection .
+
+seas:BuildingSpaceFrontier rdfs:comment "Surface that marks the frontier of a building space, and represents the connection point to other building spaces."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Building Space Frontier"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/BuildingSpatialStructure
+
+seas:BuildingSpatialStructure a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpace ;
+	rdfs:comment "A man made structure with spatial properties."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "BuildingSpatialStructure"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/BuildingStorey
+
+seas:BuildingStorey a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpatialStructure ;
+	rdfs:comment "The storey represents a (nearly) horizontal aggregation of spaces that are vertically bound."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "BuildingStorey"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Ceiling
+
+seas:Ceiling a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpaceFrontier ;
+	rdfs:comment "Ceiling is a downwards tilted horizontal surface."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Ceiling"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/CivilEngineeringWork
+
+seas:CivilEngineeringWork a owl:Class ;
+	rdfs:subClassOf seas:Construction ;
+	rdfs:comment "Civil engineering works are all constructions not classified under buildings : railways, roads, bridges, highways, airport runways, dams etc."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "CivilEngnineeringWork"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/ClosedBuildingSpaceConnection
+
+seas:ClosedBuildingSpaceConnection a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpaceConnection ;
+	owl:disjointWith seas:OpenBuildingSpaceConnection , seas:OpennableBuildingSpaceConnection ;
+	rdfs:comment """A closed building space connection is a closed connection between two building spaces. 
+
+  This separation may for instance be a wall, i.e., a (tilted more than 60 percent) vertical surface. 
+
+  Instances of `seas:ClosedBuildingSpaceConnection` may be typed by classes from specialized building ontologies."""@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Closed Building Space Connection"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Construction
+
+seas:Construction a owl:Class ;
+	rdfs:subClassOf seas:Zone ;
+	rdfs:comment "Constructions are structures connected with the ground which are made of construction materials and components and/or for which construction work is carried out."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Construction"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Corridor
+
+seas:Corridor a owl:Class ;
+	rdfs:subClassOf seas:Lobby ;
+	rdfs:comment "A gallery or passage connecting parts of a building; hallway."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Corridor"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/DiningRoom
+
+seas:DiningRoom a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "A room in which meals are eaten, as in a home or hotel, especially the room in which the major or more formal meals are eaten."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Dining Room"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Door
+
+seas:Door a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpaceConnection ;
+	rdfs:comment "the large flat piece of wood, glass etc that you move when you go into or out of a building, room, vehicle etc, or when you open a cupboard (Longman Dictionary of Contemporary English Online)"@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Door"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/EducationalBuilding
+
+seas:EducationalBuilding a owl:Class ;
+	rdfs:subClassOf seas:NonResidentalBuilding ;
+	rdfs:comment "Schools and day care centers."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "EducationalBuilding"@en , "Opetusrakennus"@fi ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Elevator
+
+seas:Elevator a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "Elevator is used to transport people between different floors."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Elevator"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Floor
+
+seas:Floor a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpaceFrontier ;
+	rdfs:comment "A floor is a upwards tilted horzontal surface, could be divided to interior, exposed (outside) or raised floor."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Floor"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Garage
+
+seas:Garage a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "Room for garage."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Garage"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Greenhouse
+
+seas:Greenhouse a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpace ;
+	rdfs:comment "A building, room, or zone, usually chiefly of glass, in which the temperature is maintained within a desired range, used for cultivating tender plants or growing plants out of season."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Greenhouse"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Hall
+
+seas:Hall a owl:Class ;
+	rdfs:subClassOf seas:Lobby ;
+	rdfs:comment "A large entrance room of a house or building."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Hall"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/HolidayBuilding
+
+seas:HolidayBuilding a owl:Class ;
+	rdfs:subClassOf seas:ResidentalBuilding ;
+	rdfs:comment "A secondary residential building used only occasionally during vacations such as a summerhouse or cottage. "@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "HolidayBuilding"@en , "VapaaAjanRakennus"@fi ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/HomeOffice
+
+seas:HomeOffice a owl:Class ;
+	rdfs:subClassOf seas:Office ;
+	rdfs:comment "A work or office space set up in a person's home and used exclusively for business on a regular basis."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Tree house"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/IndustrialBuilding
+
+seas:IndustrialBuilding a owl:Class ;
+	rdfs:subClassOf seas:NonResidentalBuilding ;
+	rdfs:comment "Buildings used for industrial production, e.g. factories, workshops, slaughterhouses, breweries, assembly plants, etc."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "IndustrialBuilding"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/InstitutionalBuilding
+
+seas:InstitutionalBuilding a owl:Class ;
+	rdfs:subClassOf seas:NonResidentalBuilding ;
+	rdfs:comment "Institutions such as hospitals providing medical and surgical treatment and nursing care for ill or injured people."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "HoitoalanRakennus"@fi , "InstitutionalBuilding"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Kitchen
+
+seas:Kitchen a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "Kitchen is a room used mainly for cooking and possibly eating."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Kitchen"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Laundry
+
+seas:Laundry a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "A room or zone, as in a home or apartment building, reserved for doing the family wash."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Laundry"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/LivingRoom
+
+seas:LivingRoom a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "Living Room is the main room of daytime activity."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Living Room"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Lobby
+
+seas:Lobby a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpace ;
+	rdfs:comment "An entrance hall, corridor, or vestibule, as in a public building, often serving as an anteroom; foyer."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Lobby"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/LowEnergyHouse
+
+seas:LowEnergyHouse a owl:Class ;
+	rdfs:subClassOf seas:Building ;
+	rdfs:comment "A house typically consuming half the energy than a norm house."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "LowEnergyHouse"@en , "Matalaenergiatalo"@fi ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/MercantileBuilding
+
+seas:MercantileBuilding a owl:Class ;
+	rdfs:subClassOf seas:NonResidentalBuilding ;
+	rdfs:comment "Places where goods are displayed and sold. Examples: grocery stores, department stores, and gas stations."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Liikerakennus"@fi , "MercantileBuilding"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/NonResidentalBuilding
+
+seas:NonResidentalBuilding a owl:Class ;
+	rdfs:subClassOf seas:Building ;
+	rdfs:comment "A  non-residential building is a building at least half of which is used for other than residential purposes. "@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "NonResidentalBuilding"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/NormHouse
+
+seas:NormHouse a owl:Class ;
+	rdfs:subClassOf seas:Building ;
+	rdfs:comment "A building fulfilling the minimal criteria for energy efficiency."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "NormHouse"@en , "Normitalo"@fi ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Office
+
+seas:Office a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "A room, set of rooms, or building where the business of a commercial or industrial organization or of a professional person is conducted."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Office"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/OfficeBuilding
+
+seas:OfficeBuilding a owl:Class ;
+	rdfs:subClassOf seas:NonResidentalBuilding ;
+	rdfs:comment "Places where services are provided. Examples: banks, insurance agencies."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "BusinessBuilding"@en , "Toimistorakennus"@fi ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/OneDwellingBuilding
+
+seas:OneDwellingBuilding a owl:Class ;
+	rdfs:subClassOf seas:SmallHouse ;
+	rdfs:comment "Detached house."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "OneDwellingBuilding"@en , "YhdenAsunnonTalo"@fi ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/OpenBuildingSpaceConnection
+
+seas:OpenBuildingSpaceConnection a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpaceConnection ;
+	owl:disjointWith seas:OpennableBuildingSpaceConnection ;
+	rdfs:comment """An open building space connection is a connection between two building spaces that is open.
+
+  This connection may for instance be a hole in a wall, or a virtual separation between two offices in an open space.
+
+  Instances of `seas:OpenBuildingSpaceConnection` may be typed by classes from specialized building ontologies."""@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Open Building Space Connection"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/OpennableBuildingSpaceConnection
+
+seas:OpennableBuildingSpaceConnection a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpaceConnection ;
+	rdfs:comment """An opennable building space connection is a connection between two building spaces that has a certain degree of openness.
+
+  This connection may for instance be a window or a door.
+
+  Instances of `seas:OpennableBuildingSpaceConnection` may be typed by classes from specialized building ontologies."""@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Opennable Building Space Connection"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/PassiveHouse
+
+seas:PassiveHouse a owl:Class ;
+	rdfs:subClassOf seas:Building ;
+	rdfs:comment "A house typically consuming a quarter of the energy than a norm house."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Passiivitalo"@fi , "PassiveHouse"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/PlusEnergyBuilding
+
+seas:PlusEnergyBuilding a owl:Class ;
+	rdfs:subClassOf seas:Building ;
+	rdfs:comment "A net plus-energy building is a building that over a year does generates more energy than it uses. "@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "PlusEnergyBuilding"@en , "Plusenergiatalo"@fi ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/PowerplantBuilding
+
+seas:PowerplantBuilding a owl:Class ;
+	rdfs:subClassOf seas:IndustrialBuilding ;
+	rdfs:comment "Places housing any type of a power plants."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "PowerplantBuilding"@en , "VoimalaRakennus"@fi ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/ResidentalBuilding
+
+seas:ResidentalBuilding a owl:Class ;
+	rdfs:subClassOf seas:Building ;
+	rdfs:comment "A residential building is a building at least half of which is used for residential purposes. "@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Asuinrakennus"@fi , "ResidentalBuilding"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Roof
+
+seas:Roof a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpaceConnection ;
+	rdfs:comment "A (tilted more than 60 percent) vertical surface that separates building spaces."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Roof"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Room
+
+seas:Room a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpace ;
+	rdfs:comment "A room in a building space enclosed by surfaces, this could also be modelled as role of space, not subclass of the space itself."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Room"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Sauna
+
+seas:Sauna a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "Sauna is a special type bathroom for enjoying heated steam."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Sauna"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/SiteOfBuilding
+
+seas:SiteOfBuilding a owl:Class ;
+	rdfs:subClassOf seas:Zone ;
+	rdfs:comment "Building site is a locale containing one or more separate buildings. They are zones."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "SiteOfBuilding"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/SmallHouse
+
+seas:SmallHouse a owl:Class ;
+	rdfs:subClassOf seas:ResidentalBuilding ;
+	rdfs:comment "A detached small residential building."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Pientalo"@en , "SmallHouse"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Stairs
+
+seas:Stairs a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpace ;
+	rdfs:comment "A construction designed to bridge a large vertical distance by dividing it into smaller vertical distances, called steps."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Stairs"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/StorageBuilding
+
+seas:StorageBuilding a owl:Class ;
+	rdfs:subClassOf seas:NonResidentalBuilding ;
+	rdfs:comment "Places where items are stored. Examples: warehouses, reservoirs and silos."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "StorageBuilding"@en , "VarastoRakennus"@fi ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/StorageRoom
+
+seas:StorageRoom a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "Room for storage."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Storage Room"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Sunroom
+
+seas:Sunroom a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "A structure, either attached or integrated into a building, which allows enjoyment of the surrounding landscape while being sheltered from adverse weather."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Swimming Pool"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/SwimmingPool
+
+seas:SwimmingPool a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "A tank or large artificial basin, as of concrete, for filling with water for swimming."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Swimming Pool"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/TreeHouse
+
+seas:TreeHouse a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpace ;
+	rdfs:comment "A small house, especially one for children to play in, built or placed up in the branches of a tree."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Tree House"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/UtilityRoom
+
+seas:UtilityRoom a owl:Class ;
+	rdfs:subClassOf seas:Room ;
+	rdfs:comment "Room for other special utilities and hobbies."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Utility Room"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Wall
+
+seas:Wall a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpaceConnection ;
+	rdfs:comment "A roof upwards tilted surface tilted up part of upper envelope of building."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Wall"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Window
+
+seas:Window a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpaceConnection ;
+	rdfs:comment "a space or an zone of glass in the wall of a building or vehicle that lets in light (Longman Dictionary of Contemporary English Online)"@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Window"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/Yard
+
+seas:Yard a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpace ;
+	rdfs:comment "A small usually walled and often paved zone open to the sky and adjacent to a building."@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Yard"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/ZeroEnergyBuilding
+
+seas:ZeroEnergyBuilding a owl:Class ;
+	rdfs:subClassOf seas:Building ;
+	rdfs:comment "A net zero-energy building (ZEB) is a building that over a year does not use more energy than it generates. "@en ;
+	rdfs:isDefinedBy seas:BuildingOntology ;
+	rdfs:label "Nollaenergiatalo"@fi , "ZeroEnergyBuilding"@en ;
+	vs:term_status "testing" .
+# 
+# https://w3id.org/seas/BuildingOntology#AcademicOffice
+
+:AcademicOffice a owl:Class ;
+	rdfs:subClassOf seas:Office .
+# 
+# https://w3id.org/seas/BuildingOntology#BreakoutSpace
+
+:BreakoutSpace a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#ChangingShowerRoom
+
+:ChangingShowerRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Circulation
+
+:Circulation a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#CleanersStore
+
+:CleanersStore a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Core
+
+:Core a owl:Class ;
+	rdfs:subClassOf seas:BuildingSpace .
+# 
+# https://w3id.org/seas/BuildingOntology#DiningRoom
+
+:DiningRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#EquipmentMaterialsStore
+
+:EquipmentMaterialsStore a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Exhibition
+
+:Exhibition a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#GeneralOffice
+
+:GeneralOffice a owl:Class ;
+	rdfs:subClassOf seas:Office .
+# 
+# https://w3id.org/seas/BuildingOntology#LectureTheatre
+
+:LectureTheatre a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#LightLaboratory
+
+:LightLaboratory a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#MeetingRoom
+
+:MeetingRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#NonAcademicOffice
+
+:NonAcademicOffice a owl:Class ;
+	rdfs:subClassOf seas:Office .
+# 
+# https://w3id.org/seas/BuildingOntology#PlantRoom
+
+:PlantRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#PostgraduateRoom
+
+:PostgraduateRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Reception
+
+:Reception a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#ResearchOffice
+
+:ResearchOffice a owl:Class ;
+	rdfs:subClassOf seas:Office .
+# 
+# https://w3id.org/seas/BuildingOntology#SocialLearningSpace
+
+:SocialLearningSpace a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#SpecialistServicingLaboratory
+
+:SpecialistServicingLaboratory a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#StaffCommonRoom
+
+:StaffCommonRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Studio
+
+:Studio a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#StudyRoom
+
+:StudyRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#TeachingRoom
+
+:TeachingRoom a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Toilet
+
+:Toilet a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Works
+
+:Works a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# https://w3id.org/seas/BuildingOntology#Workshop
+
+:Workshop a owl:Class ;
+	rdfs:subClassOf seas:Room .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/seas/BuildingOntology
+
+seas:BuildingOntology a owl:NamedIndividual , voaf:Vocabulary .
+# 
+# https://w3id.org/seas/BuildingOntology#Core_1
+
+:Core_1 a owl:NamedIndividual , :Core .
+# 
+# https://w3id.org/seas/BuildingOntology#Core_2
+
+:Core_2 a owl:NamedIndividual , :Core .
+# 
+# https://w3id.org/seas/BuildingOntology#Core_3
+
+:Core_3 a owl:NamedIndividual , :Core .
+# 
+
+_:genid8 a foaf:Person ;
+	foaf:name "Francisco Silva" .
+
+_:genid9 a foaf:Person ;
+	foaf:name "Brigida Teixeira" .
+
+_:genid10 a foaf:Person ;
+	foaf:name "Gabriel Santos" .
+
+_:genid11 a foaf:Person ;
+	foaf:name "Francisco Silva" .
+
+_:genid12 a foaf:Person ;
+	foaf:name "Brigida Teixeira" .
+
+_:genid13 a foaf:Person ;
+	foaf:name "Gabriel Santos" .
+
+_:genid14 a foaf:Person ;
+	foaf:name "Gabriel Santos" .
+
+_:genid15 a foaf:Person ;
+	foaf:name "Francisco Silva" .
+
+_:genid16 a foaf:Person ;
+	foaf:name "Brigida Teixeira" .
+# Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

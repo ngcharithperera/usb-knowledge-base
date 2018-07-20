@@ -29,9 +29,68 @@
     
 
 
+    <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
+        <owl:equivalentClass rdf:resource="https://w3id.org/seas/FeatureOfInterest"/>
+    </rdf:Description>
+    
+
+
     <!-- https://w3id.org/seas/BuildingSpace -->
 
-    <owl:Class rdf:about="https://w3id.org/seas/BuildingSpace"/>
+    <owl:Class rdf:about="https://w3id.org/seas/BuildingSpace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/FeatureOfInterest -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/FeatureOfInterest"/>
+    
+
+
+    <!-- https://w3id.org/seas/Office -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/Office">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Room"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/Room -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/Room">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/BuildingSpace"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/BuildingOntology#AcademicOffice -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/BuildingOntology#AcademicOffice">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Office"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_008">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
