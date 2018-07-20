@@ -2,16 +2,17 @@
 <rdf:RDF xmlns="http://www.urbanobservatory.ac.uk/ontologies/usb#"
      xml:base="http://www.urbanobservatory.ac.uk/ontologies/usb"
      xmlns:schema="http://schema.org/"
-     xmlns:seas="https://w3id.org/seas"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:seas="https://w3id.org/seas"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:sosa="http://www.w3.org/ns/sosa/">
     <owl:Ontology rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb">
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
     </owl:Ontology>
@@ -34,6 +35,14 @@
     <rdf:Description rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
         <owl:equivalentClass rdf:resource="https://w3id.org/seas/FeatureOfInterest"/>
     </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/seas/AcademicOffice -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/AcademicOffice">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Office"/>
+    </owl:Class>
     
 
 
@@ -67,14 +76,6 @@
     
 
 
-    <!-- https://w3id.org/seas/BuildingOntology#AcademicOffice -->
-
-    <owl:Class rdf:about="https://w3id.org/seas/BuildingOntology#AcademicOffice">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Office"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -98,6 +99,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Plt22Plant06P3HeatPDataLTHWFlowT">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <sosa:isHostedBy rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#BMSUSB6PXC501Plt22Plant06P3HeatPDataLTHWFlowT"/>
     </owl:NamedIndividual>
     
 
@@ -105,7 +107,32 @@
     <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_008 -->
 
     <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_008">
-        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+        <rdf:type rdf:resource="https://w3id.org/seas/AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_009">
+        <rdf:type rdf:resource="https://w3id.org/seas/AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_010">
+        <rdf:type rdf:resource="https://w3id.org/seas/AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#20180720T094723468ZLTHWFlowTemp -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#20180720T094723468ZLTHWFlowTemp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <sosa:madeBySensor rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Plt22Plant06P3HeatPDataLTHWFlowT"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
