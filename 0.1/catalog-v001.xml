@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="file:/C:/Users/Charith/Dropbox/ResearchWork/Collabarations/USB/usb-knowledge-base/0.1/ZoneOntology" uri="ZoneOntology-1.0.rdf"/>
+    <uri id="Imports Wizard Entry" name="file:/C:/Users/Charith/Dropbox/ResearchWork/Collabarations/USB/usb-knowledge-base/0.1/BuildingOntology-1.0" uri="BuildingOntology-1.0.rdf"/>
     <uri id="User Entered Import Resolution" name="file:/pep/" uri="pep-1.1.rdf"/>
     <uri id="User Entered Import Resolution" name="file:/C:/Users/Charith/Dropbox/ResearchWork/Collabarations/USB/usb-knowledge-base/SystemOntology" uri="SystemOntology-1.1.rdf"/>
     <uri id="User Entered Import Resolution" name="file:/pep/pep-1.0" uri="pep-1.0.rdf"/>

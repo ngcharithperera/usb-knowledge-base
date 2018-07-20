@@ -52,6 +52,36 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/seas/area -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/seas/area">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/seas/Zone"/>
+        <rdfs:range rdf:resource="https://w3id.org/seas/AreaProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/seas/subZoneOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/seas/subZoneOf">
+        <rdfs:domain rdf:resource="https://w3id.org/seas/Zone"/>
+        <rdfs:range rdf:resource="https://w3id.org/seas/Zone"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -63,6 +93,30 @@
     <!-- http://qudt.org/1.1/schema/qudt#QuantityValue -->
 
     <owl:Class rdf:about="http://qudt.org/1.1/schema/qudt#QuantityValue"/>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Core -->
+
+    <owl:Class rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Core">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#GeneralOffice -->
+
+    <owl:Class rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#GeneralOffice">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Office"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#PlantRoom -->
+
+    <owl:Class rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#PlantRoom">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Room"/>
+    </owl:Class>
     
 
 
@@ -82,10 +136,16 @@
     
 
 
+    <!-- https://w3id.org/seas/AreaProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/AreaProperty"/>
+    
+
+
     <!-- https://w3id.org/seas/BuildingSpace -->
 
     <owl:Class rdf:about="https://w3id.org/seas/BuildingSpace">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/FeatureOfInterest"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Zone"/>
     </owl:Class>
     
 
@@ -93,6 +153,14 @@
     <!-- https://w3id.org/seas/FeatureOfInterest -->
 
     <owl:Class rdf:about="https://w3id.org/seas/FeatureOfInterest"/>
+    
+
+
+    <!-- https://w3id.org/seas/Floor -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/Floor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/FeatureOfInterest"/>
+    </owl:Class>
     
 
 
@@ -108,6 +176,14 @@
 
     <owl:Class rdf:about="https://w3id.org/seas/Room">
         <rdfs:subClassOf rdf:resource="https://w3id.org/seas/BuildingSpace"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/Zone -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/Zone">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/FeatureOfInterest"/>
     </owl:Class>
     
 
@@ -172,6 +248,22 @@
     
 
 
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_031 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_031">
+        <rdf:type rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#GeneralOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Zone_6_031_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Zone_6_031_2">
+        <rdf:type rdf:resource="https://w3id.org/seas/Zone"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#20180720T094723468ZLTHWFlowTemp -->
 
     <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#20180720T094723468ZLTHWFlowTemp">
@@ -187,6 +279,14 @@
                 <qudt:unit rdf:resource="http://qudt.org/vocab/unit#DegreeCelsius"/>
             </rdf:Description>
         </sosa:hasResult>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#6">
+        <rdf:type rdf:resource="https://w3id.org/seas/Floor"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
