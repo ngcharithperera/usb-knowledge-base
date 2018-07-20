@@ -230,6 +230,30 @@
     
 
 
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Core_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Core_1">
+        <rdf:type rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Core"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Core_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Core_2">
+        <rdf:type rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Core"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Core_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Core_3">
+        <rdf:type rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Core"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Flow_Temp -->
 
     <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Flow_Temp">
@@ -242,6 +266,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#PlantRoom_6_045">
         <rdf:type rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#PlantRoom"/>
+        <locatedIn rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Core_3"/>
     </owl:NamedIndividual>
     
 
