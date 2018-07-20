@@ -15,7 +15,8 @@
     <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/sosa/" uri="sosa.ttl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/seas/BuildingOntology-1.0" uri="Fresh%20Copy/BuildingOntology-1.0.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1532082449239" name="duplicate:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="usb.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1532082449239" name="duplicate:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="usb2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1532099215651" name="file:/C:/Users/Charith/Dropbox/ResearchWork/Collabarations/USB/usb-knowledge-base/0.1/ZoneOntology" uri="ZoneOntology-1.0.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1532099215651" name="duplicate:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="usb.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1532099215651" name="duplicate:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="usb2.owl"/>
     </group>
 </catalog>
