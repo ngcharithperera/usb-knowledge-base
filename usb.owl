@@ -86,6 +86,22 @@
     
 
 
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#BMSUSB6PXC501Plt22Plant06P3HeatPDataLTHWFlowT -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#BMSUSB6PXC501Plt22Plant06P3HeatPDataLTHWFlowT">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Plt22Plant06P3HeatPDataLTHWFlowT -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Plt22Plant06P3HeatPDataLTHWFlowT">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_008 -->
 
     <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_008">
