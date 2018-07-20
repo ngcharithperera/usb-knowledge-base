@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1532096204908" name="http://www.urbanobservatory.ac.uk/ontologies/usb" uri="usb.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1532096204908" name="shadowed:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="0.2/usb.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1532096204908" name="shadowed:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="0.1/usb.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1532096204908" name="shadowed:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="0.1/usb2.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1532096204908" name="shadowed:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="Temp/usb.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1532097493328" name="http://www.urbanobservatory.ac.uk/ontologies/usb" uri="usb.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1532097493328" name="shadowed:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="0.2/usb.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1532097493328" name="shadowed:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="0.1/usb.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1532097493328" name="shadowed:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="0.1/usb2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1532097493328" name="shadowed:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="Temp/usb.owl"/>
     </group>
 </catalog>

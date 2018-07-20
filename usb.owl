@@ -7,6 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:seas1="https://w3id.org/seas/"
      xmlns:seas="https://w3id.org/seas"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -260,6 +261,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Zone_6_031_2">
         <rdf:type rdf:resource="https://w3id.org/seas/Zone"/>
+        <seas1:subZoneOf rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_031"/>
     </owl:NamedIndividual>
     
 
