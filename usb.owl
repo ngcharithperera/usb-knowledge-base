@@ -182,6 +182,7 @@
         <sosa:hasResult>
             <rdf:Description>
                 <rdf:type rdf:resource="http://qudt.org/1.1/schema/qudt#QuantityValue"/>
+                <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Result"/>
                 <qudt:numericValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">41.400001525878906</qudt:numericValue>
                 <qudt:unit rdf:resource="http://qudt.org/vocab/unit#DegreeCelsius"/>
             </rdf:Description>
