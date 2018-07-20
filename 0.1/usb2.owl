@@ -1,0 +1,1311 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.urbanobservatory.ac.uk/ontologies/usb"
+     xml:base="http://www.urbanobservatory.ac.uk/ontologies/usb"
+     xmlns:schema="http://schema.org/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <owl:Ontology rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb">
+        <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Occupant -->
+
+    <owl:Class rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Occupant"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Actuator -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Actuator">
+        <owl:equivalentClass rdf:resource="https://w3id.org/seas/Actuator"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Sensor">
+        <owl:equivalentClass rdf:resource="https://w3id.org/seas/Sensor"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/seas/Actuator -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/Actuator"/>
+    
+
+
+    <!-- https://w3id.org/seas/Sensor -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/Sensor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Actual_Control_Mode -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Actual_Control_Mode">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Actual_Cooling_Set_point -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Actual_Cooling_Set_point">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Actual_Heating_Set_point -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Actual_Heating_Set_point">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Alarm_A_Active -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Alarm_A_Active">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Alarm_B_Active -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Alarm_B_Active">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Alarm_Reset -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Alarm_Reset">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Flow_Temp -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Flow_Temp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Isolation_Valve -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Isolation_Valve">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Pump_Alarm_Reset -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Pump_Alarm_Reset">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Pump_Enable -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Pump_Enable">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Pump_Fault -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Pump_Fault">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Pump_Mode -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Pump_Mode">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Pump_Speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Pump_Speed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Return_Temp -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Return_Temp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#CHW_Speed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#CIM_Status -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#CIM_Status">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Beam_Control_Valve -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Beam_Control_Valve">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Beam_Low_Limit -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Beam_Low_Limit">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Beam_Sec_Flow_Temp -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Beam_Sec_Flow_Temp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Valve_Position -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Valve_Position">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Water_Bypass_Status -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Water_Bypass_Status">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Water_Index_Pressure_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Water_Index_Pressure_Sensor">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Water_Pump_BACnet_Enable -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Water_Pump_BACnet_Enable">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Water_Set_Point -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_Water_Set_Point">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_water_bypass_valve_position -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Chilled_water_bypass_valve_position">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Circulation -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Circulation">
+        <rdf:type rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Occupant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Comfort_Cooling_Set_Point_Write -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Comfort_Cooling_Set_Point_Write">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Comfort_Heating_Set_Point_Write -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Comfort_Heating_Set_Point_Write">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Common_User -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Common_User">
+        <rdf:type rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Occupant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Condensate_Alarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Condensate_Alarm">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Control_Status_Test -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Control_Status_Test">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Cooling_Coil_Temperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Cooling_Coil_Temperature">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Cooling_Coil_Valve -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Cooling_Coil_Valve">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Cooling_Valve_Position -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Cooling_Valve_Position">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Dampers_Operational -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Dampers_Operational">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Eco_Cooling_Set_Point_Write -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Eco_Cooling_Set_Point_Write">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Eco_Heating_Set_Point_Write -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Eco_Heating_Set_Point_Write">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Energy -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Energy">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Estate_Support_Service -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Estate_Support_Service">
+        <rdf:type rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Occupant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Air_Fan_Speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Air_Fan_Speed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Air_Filter_Alarm_Limit -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Air_Filter_Alarm_Limit">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Air_Filter_Pressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Air_Filter_Pressure">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Air_Flow -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Air_Flow">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Air_Temp -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Air_Temp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Fan_Fault -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Fan_Fault">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Fan_High_Speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Extract_Fan_High_Speed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Fan_Speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Fan_Speed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Fire_Alarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Fire_Alarm">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_1">
+        <rdf:type rdf:resource="https://w3id.org/seas/Floor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_2">
+        <rdf:type rdf:resource="https://w3id.org/seas/Floor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_3">
+        <rdf:type rdf:resource="https://w3id.org/seas/Floor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_4">
+        <rdf:type rdf:resource="https://w3id.org/seas/Floor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_5">
+        <rdf:type rdf:resource="https://w3id.org/seas/Floor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_6">
+        <rdf:type rdf:resource="https://w3id.org/seas/Floor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_G -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_G">
+        <rdf:type rdf:resource="https://w3id.org/seas/Floor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_R -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Floor_R">
+        <rdf:type rdf:resource="https://w3id.org/seas/Floor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Flow_Rate -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Flow_Rate">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Flow_Temperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Flow_Temperature">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Frequency -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Frequency">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#General -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#General">
+        <rdf:type rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Occupant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Heat_Pump_Enable -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Heat_Pump_Enable">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Heat_Pump_Mode -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Heat_Pump_Mode">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Heating_Coil_Temperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Heating_Coil_Temperature">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Heating_Coil_Valve -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Heating_Coil_Valve">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Heating_Index_Pressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Heating_Index_Pressure">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Heating_Valve_Position -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Heating_Valve_Position">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Holiday_Switch -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Holiday_Switch">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Hours_Run -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Hours_Run">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#L1_to_N -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#L1_to_N">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#L2_to_N -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#L2_to_N">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#L3_to_N -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#L3_to_N">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Flow_Temp -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Flow_Temp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Isolation_Valve -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Isolation_Valve">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Pump_Alarm_Reset -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Pump_Alarm_Reset">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Pump_BACnet_Enable -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Pump_BACnet_Enable">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Pump_Enable -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Pump_Enable">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Pump_Fault -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Pump_Fault">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Pump_Mode -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Pump_Mode">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Pump_Speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Pump_Speed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Return_Temp -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Return_Temp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Secondary_Flow_Temp -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Secondary_Flow_Temp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Set_Point -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Set_Point">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#LTHW_Speed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Loop_Flow_DPS -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Loop_Flow_DPS">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Loop_Flow_Proven -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Loop_Flow_Proven">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Max_Room_Temp -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Max_Room_Temp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Min_Room_Temp -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Min_Room_Temp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Mode_Input -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Mode_Input">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Mode_Status -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Mode_Status">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Not_Serious_Alarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Not_Serious_Alarm">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#OAT -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#OAT">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Occupancy_Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Occupancy_Sensor">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#On_Off_Mode -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#On_Off_Mode">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Operating_Set_Point -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Operating_Set_Point">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Operating_mode -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Operating_mode">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Outside_Air_Temp -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Outside_Air_Temp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#PIR -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#PIR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Power -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Power">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Pre_Cooling_Active -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Pre_Cooling_Active">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Pre_Cooling_Set_Point_Write -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Pre_Cooling_Set_Point_Write">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Pump_Change_Over_Requested -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Pump_Change_Over_Requested">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Return_Temperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Return_Temperature">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_005">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#Toilet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_008">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_009">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_010">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_011">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#MeetingRoom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_012 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_012">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_013">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_014">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_015">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_016">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_017">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_018 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_018">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_019 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_019">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#StudyRoom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_020">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_021">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_022 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_022">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_023">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_024">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_025 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_025">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_026 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_026">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#LightLaboratory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_027 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_027">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#LightLaboratory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_028 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_028">
+        <rdf:type rdf:resource="https://w3id.org/seas/Kitchen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_030 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_030">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_033 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_033">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_034 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_034">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_035 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_035">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_036 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_036">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_037 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_037">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_038 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_038">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_039 -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Room_6_039">
+        <rdf:type rdf:resource="https://w3id.org/seas/BuildingOntology#AcademicOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#SAGE_Faculty_Office -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#SAGE_Faculty_Office">
+        <rdf:type rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Occupant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#School_of_Computing_Science -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#School_of_Computing_Science">
+        <rdf:type rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Occupant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Serious_Alarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Serious_Alarm">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Fan_Speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Fan_Speed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Filter_Alarm_Limit -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Filter_Alarm_Limit">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Filter_Pressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Filter_Pressure">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Flow -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Flow">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Humidity -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Humidity">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Humidity_Set_point -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Humidity_Set_point">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Temp -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Temp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Temp_Set_point -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Air_Temp_Set_point">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Fan_High_Speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Supply_Fan_High_Speed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Thermal_Wheel_Speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Thermal_Wheel_Speed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Timetabling -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Timetabling">
+        <rdf:type rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Occupant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Toilet_Extract_Fan_Enable -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Toilet_Extract_Fan_Enable">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Toilet_Extract_Fan_Speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Toilet_Extract_Fan_Speed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Toilet_Solenoild_Valve -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Toilet_Solenoild_Valve">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Unit_Enable -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Unit_Enable">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Unit_Operational -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Unit_Operational">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Urban -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Urban">
+        <rdf:type rdf:resource="http://www.urbanobservatory.ac.uk/ontologies/usb#Occupant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Window_Alarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Window_Alarm">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.urbanobservatory.ac.uk/ontologies/usb#Zone_Occupied -->
+
+    <owl:NamedIndividual rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb#Zone_Occupied">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

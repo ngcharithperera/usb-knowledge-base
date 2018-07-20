@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="file:/pep/" uri="pep-1.1.rdf"/>
+    <uri id="User Entered Import Resolution" name="file:/C:/Users/Charith/Dropbox/ResearchWork/Collabarations/USB/usb-knowledge-base/SystemOntology" uri="SystemOntology-1.1.rdf"/>
+    <uri id="User Entered Import Resolution" name="file:/pep/pep-1.0" uri="pep-1.0.rdf"/>
+    <uri id="User Entered Import Resolution" name="file:/C:/Users/Charith/Dropbox/ResearchWork/Collabarations/USB/usb-knowledge-base/PlayerOntology" uri="PlayerOntology-1.1.rdf"/>
+    <uri id="User Entered Import Resolution" name="file:/C:/Users/Charith/Dropbox/ResearchWork/Collabarations/USB/usb-knowledge-base/OfferingOntology-1.0" uri="OfferingOntology-1.0.rdf"/>
+    <uri id="User Entered Import Resolution" name="file:/C:/Users/Charith/Dropbox/ResearchWork/Collabarations/USB/usb-knowledge-base/FeatureOfInterestOntology" uri="FeatureOfInterestOntology-1.0.rdf"/>
+    <uri id="User Entered Import Resolution" name="file:/C:/Users/Charith/Dropbox/ResearchWork/Collabarations/USB/usb-knowledge-base/EvaluationOntology" uri="EvaluationOntology-1.0.rdf"/>
+    <uri id="User Entered Import Resolution" name="file:/C:/Users/Charith/Dropbox/ResearchWork/Collabarations/USB/usb-knowledge-base/TimeOntology-1.0" uri="TimeOntology-1.0.rdf"/>
+    <uri id="Imports Wizard Entry" name="file:/C:/Users/Charith/Dropbox/ResearchWork/Collabarations/USB/usb-knowledge-base/seas-1.0" uri="seas-1.0.rdf"/>
+    <uri id="User Entered Import Resolution" name="https://w3id.org/seas/ZoneOntology" uri="ZoneOntology-1.0.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/sosa/" uri="sosa.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/seas/BuildingOntology-1.0" uri="Fresh%20Copy/BuildingOntology-1.0.ttl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1532082449239" name="duplicate:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="usb.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1532082449239" name="duplicate:http://www.urbanobservatory.ac.uk/ontologies/usb" uri="usb2.owl"/>
+    </group>
+</catalog>

@@ -2,9 +2,9 @@
 <rdf:RDF xmlns="http://www.urbanobservatory.ac.uk/ontologies/usb#"
      xml:base="http://www.urbanobservatory.ac.uk/ontologies/usb"
      xmlns:schema="http://schema.org/"
-     xmlns:seas="https://w3id.org/seas"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -14,24 +14,8 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/">
     <owl:Ontology rdf:about="http://www.urbanobservatory.ac.uk/ontologies/usb">
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <owl:imports rdf:resource="file:/C:/Users/Charith/Dropbox/ResearchWork/Collabarations/USB/usb-knowledge-base/BuildingOntology-1.0"/>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://w3id.org/seas/BuildingSpace -->
-
-    <owl:Class rdf:about="https://w3id.org/seas/BuildingSpace"/>
 </rdf:RDF>
 
 

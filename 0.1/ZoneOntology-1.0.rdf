@@ -1,0 +1,260 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:seas="https://w3id.org/seas/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="ZoneOntology">
+    <owl:imports rdf:resource="SystemOntology"/>
+    <dcterms:description xml:lang="en">The SEAS Zone ontology describes systems named `seas:Zone`s, that are connected through `seas:ZoneConnection`s at their `seas:zoneFrontier`s. </dcterms:description>
+    <vann:preferredNamespacePrefix>seas</vann:preferredNamespacePrefix>
+    <dcterms:title xml:lang="en">The SEAS Zone ontology</dcterms:title>
+    <owl:versionInfo>v1.0</owl:versionInfo>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2016-07-21</dcterms:modified>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2016-07-21</dcterms:issued>
+    <vann:preferredNamespaceUri rdf:resource=""/>
+    <dcterms:license rdf:resource="https://www.apache.org/licenses/LICENSE-2.0"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </rdf:type>
+    <dcterms:creator rdf:resource="http://www.maxime-lefrancois.info/me#"/>
+    <owl:versionIRI rdf:resource="ZoneOntology-1.0"/>
+    <owl:imports rdf:resource="DeviceOntology"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="AreaProperty">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:resource="Property"/>
+    <rdfs:comment xml:lang="en">Area is the quantity that expresses the extent of a two-dimensional figure or shape, or planar lamina, in the plane. Surface area is its analog on the two-dimensional surface of a three-dimensional object. Area can be understood as the amount of material with a given thickness that would be necessary to fashion a model of the shape, or the amount of paint necessary to cover the surface with a single coat.[1] It is the two-dimensional analog of the length of a curve (a one-dimensional concept) or the volume of a solid (a three-dimensional concept). (source: Wikipedia)</rdfs:comment>
+    <rdfs:label xml:lang="en">Area Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="PressureProperty">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:resource="Property"/>
+    <rdfs:comment xml:lang="en">Pressure (symbol: p or P) is the force applied perpendicular to the surface of an object per unit area over which that force is distributed. Gauge pressure (also spelled gage pressure)[a] is the pressure relative to the ambient pressure. (source: Wikipedia)</rdfs:comment>
+    <rdfs:label xml:lang="en">Pressure Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+  <owl:Class rdf:about="HumidityProperty">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:resource="Property"/>
+    <rdfs:comment xml:lang="en">The class of humidity properties of zones, zone connections, or zone frontiers.</rdfs:comment>
+    <rdfs:label xml:lang="en">Humidity Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="VolumeProperty">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:resource="Property"/>
+    <rdfs:comment xml:lang="en">Volume is the quantity of three-dimensional space enclosed by a closed surface, for example, the space that a substance (solid, liquid, gas, or plasma) or shape occupies or contains.[1] Volume is often quantified numerically using the SI derived unit, the cubic metre. The volume of a container is generally understood to be the capacity of the container, i. e. the amount of fluid (gas or liquid) that the container could hold, rather than the amount of space the container itself displaces. (source: Wikipedia)</rdfs:comment>
+    <rdfs:label xml:lang="en">Volume Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="ZoneFrontier">
+    <rdfs:isDefinedBy rdf:resource="BuildingOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:allValuesFrom>
+        <owl:Class rdf:about="ZoneConnection"/>
+      </owl:allValuesFrom>
+      <owl:onProperty rdf:resource="connectsSystemThrough"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:allValuesFrom>
+        <owl:Class rdf:about="Zone"/>
+      </owl:allValuesFrom>
+      <owl:onProperty rdf:resource="connectionPointOf"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="ConnectionPoint"/>
+    <rdfs:comment xml:lang="en">Surface that marks the frontier of an zone, and represents the connection point to other zones.</rdfs:comment>
+    <rdfs:label xml:lang="en">Zone Frontier</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="PopulationProperty">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:resource="Property"/>
+    <rdfs:comment xml:lang="en">The class of population properties of zones, zone connections, or zone frontiers.</rdfs:comment>
+    <rdfs:label xml:lang="en">Population Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="VolumetricMassDensityProperty">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:resource="Property"/>
+    <rdfs:comment xml:lang="en">The density, or more precisely, the volumetric mass density, of a substance is its mass per unit volume. The symbol most often used for density is ρ (the lower case Greek letter rho), although the Latin letter D can also be used. Mathematically, density is defined as mass divided by volume: ρ = m/V, where ρ is the density, m is the mass, and V is the volume. In some cases (for instance, in the United States oil and gas industry), density is loosely defined as its weight per unit volume, although this is scientifically inaccurate – this quantity is more specifically called specific weight. (source: Wikipedia)</rdfs:comment>
+    <rdfs:label xml:lang="en">Volumetric Mass Density Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="HumidityActuator">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:resource="Actuator"/>
+    <rdfs:comment xml:lang="en">An actuator that is capable of modifying the humidity in zones.</rdfs:comment>
+    <rdfs:label xml:lang="en">Humidity Actuator</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="HumiditySensor">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:resource="Sensor"/>
+    <rdfs:comment xml:lang="en">Humidity sensors observe the humidity of a zone, zone connection, or zone frontier.</rdfs:comment>
+    <rdfs:label>humidity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="ZoneConnection">
+    <rdfs:isDefinedBy rdf:resource="BuildingOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:allValuesFrom rdf:resource="ZoneFrontier"/>
+      <owl:onProperty rdf:resource="connectsSystemAt"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:allValuesFrom>
+        <owl:Class rdf:about="Zone"/>
+      </owl:allValuesFrom>
+      <owl:onProperty rdf:resource="connectsSystem"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="Connection"/>
+    <rdfs:comment xml:lang="en">When they are connected, zones may exchange light, heat, humidity, agents.</rdfs:comment>
+    <rdfs:label xml:lang="en">Zone Connection</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="PresenceSensor">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:resource="Sensor"/>
+    <rdfs:comment xml:lang="en">A Presence sensor observes the population inside a zone, zone connection or zone frontier.</rdfs:comment>
+    <rdfs:label>Presence Sensor</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Zone">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:resource="System"/>
+    <rdfs:comment xml:lang="en">A part or a section of a building, campus, town, etc.</rdfs:comment>
+    <rdfs:label>Zone</rdfs:label>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="subZoneOf">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="Zone"/>
+    <rdfs:domain rdf:resource="Zone"/>
+    <rdfs:subPropertyOf rdf:resource="subSystemOf"/>
+    <rdfs:comment xml:lang="en">Links an zone to another it is contained in.</rdfs:comment>
+    <rdfs:label xml:lang="en">sub zone of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+  <owl:FunctionalProperty rdf:about="volume">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="VolumeProperty"/>
+    <rdfs:domain rdf:resource="Zone"/>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdfs:comment xml:lang="en">Quantifies the volume of the zone.</rdfs:comment>
+    <rdfs:label>volume</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="saturatedVapourPressure">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="PressureProperty"/>
+    <rdfs:domain rdf:resource="HumidityProperty"/>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdfs:comment xml:lang="en">The saturated vapor pressure of moist air.</rdfs:comment>
+    <rdfs:label>saturated vapor pressure</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="humidity">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="HumidityProperty"/>
+    <rdfs:domain rdf:parseType="Resource">
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="Zone"/>
+        <owl:Class rdf:about="ZoneConnection"/>
+        <owl:Class rdf:about="ZoneFrontier"/>
+      </owl:unionOf>
+    </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdfs:comment xml:lang="en">Links a zone, zone connection, or zone frontier, to the property that qualifies its humidity.&#xD;
+&#xD;
+The humidity property has itself properties that quantify it, such as the specific humidity.</rdfs:comment>
+    <rdfs:label>humidity</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="specificHumidity">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="PercentageProperty"/>
+    <rdfs:domain rdf:resource="HumidityProperty"/>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdfs:comment xml:lang="en">The specific humidity is defined as the mass of water per unit mass of moist air.</rdfs:comment>
+    <rdfs:label>specific humidity</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="area">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="AreaProperty"/>
+    <rdfs:domain rdf:parseType="Resource">
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="Zone"/>
+        <owl:Class rdf:about="ZoneConnection"/>
+        <owl:Class rdf:about="ZoneFrontier"/>
+      </owl:unionOf>
+    </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdfs:comment xml:lang="en">The area of the Zone.</rdfs:comment>
+    <rdfs:label>area</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="populationFlow">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="Property"/>
+    <rdfs:domain rdf:resource="PopulationProperty"/>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdfs:comment xml:lang="en">The flow of agents that cross a zone, a zone connection, or a zone frontier.</rdfs:comment>
+    <rdfs:label>population flow</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="population">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="PopulationProperty"/>
+    <rdfs:domain rdf:parseType="Resource">
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="Zone"/>
+        <owl:Class rdf:about="ZoneConnection"/>
+        <owl:Class rdf:about="ZoneFrontier"/>
+      </owl:unionOf>
+    </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdfs:comment xml:lang="en">Links a zone, zone connection or zone frontier to the property that quantifies its population in terms of agents.&#xD;
+&#xD;
+The population property may itself have properties such as the population flow.</rdfs:comment>
+    <rdfs:label>population</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="absoluteHumidity">
+    <rdfs:isDefinedBy rdf:resource="ZoneOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="VolumetricMassDensityProperty"/>
+    <rdfs:domain rdf:resource="HumidityProperty"/>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdfs:comment xml:lang="en">The absolute humidity is defined by the mass of water vapor per humid air volume.</rdfs:comment>
+    <rdfs:label>absolute humidity</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+</rdf:RDF>

@@ -1,0 +1,290 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:seas="https://w3id.org/seas/"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:liner="https://w3id.org/liner/"
+    xmlns:qudt="http://qudt.org/1.1/schema/qudt#"
+    xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ssn="https://www.w3.org/ns/ssn/"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Class rdf:about="BooleanObservation">
+    <rdfs:isDefinedBy>
+      <voaf:Vocabulary rdf:about="BooleanPropertyOntology">
+        <owl:imports rdf:resource="DeviceOntology"/>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+        >2016-10-30</dcterms:issued>
+        <dcterms:license rdf:resource="https://www.apache.org/licenses/LICENSE-2.0"/>
+        <dcterms:description xml:lang="en">This ontology applies the design patterns defined in the Feature of Interest ontology and the Evaluation ontology for boolean-valued properties. &#xD;
+</dcterms:description>
+        <owl:versionIRI rdf:resource="BooleanPropertyOntology-1.0"/>
+        <owl:versionInfo>v1.0</owl:versionInfo>
+        <vann:preferredNamespaceUri rdf:resource=""/>
+        <dcterms:title xml:lang="en">The SEAS Boolean Property ontology.</dcterms:title>
+        <dcterms:creator rdf:resource="http://www.maxime-lefrancois.info/me#"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+        <owl:imports rdf:resource="EvaluationOntology"/>
+        <dcterms:contributor>
+          <foaf:Person>
+            <foaf:name>Lynda TEMAL</foaf:name>
+          </foaf:Person>
+        </dcterms:contributor>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+        >2017-08-04</dcterms:modified>
+        <vann:preferredNamespacePrefix>seas</vann:preferredNamespacePrefix>
+      </voaf:Vocabulary>
+    </rdfs:isDefinedBy>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:allValuesFrom rdf:parseType="Resource">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="FeatureOfInterest"/>
+          <owl:Class rdf:about="BooleanProperty"/>
+        </owl:unionOf>
+      </owl:allValuesFrom>
+      <owl:onProperty rdf:resource="observes"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="Observation"/>
+    <rdfs:comment xml:lang="en">Observation with an output that is a *boolean resource*, i.e., an [information resource](https://www.w3.org/TR/webarch/#def-information-resource) whose essential characteristics can be be conveyed in a boolean.&#xD;
+&#xD;
+This class combines boolean observations such as on/off, open/close or start/stop, where no intermediary state is possible for the output.</rdfs:comment>
+    <rdfs:label xml:lang="en">Boolean Observation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="BooleanSensing">
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:allValuesFrom rdf:parseType="Resource">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="FeatureOfInterest"/>
+          <owl:Class rdf:about="BooleanProperty"/>
+        </owl:unionOf>
+      </owl:allValuesFrom>
+      <owl:onProperty rdf:resource="observes"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="Sensing"/>
+    <rdfs:comment xml:lang="en">Procedure of sensing, with an output that is a *boolean resource*, i.e., an [information resource](https://www.w3.org/TR/webarch/#def-information-resource) whose essential characteristics can be be conveyed in a boolean.&#xD;
+&#xD;
+This class combines boolean sensing processes such as on/off, open/close or start/stop, where no intermediary state is possible for the output.</rdfs:comment>
+    <rdfs:label xml:lang="en">Boolean Sensing</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="BooleanActuation">
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:allValuesFrom rdf:parseType="Resource">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="FeatureOfInterest"/>
+          <owl:Class rdf:about="BooleanProperty"/>
+        </owl:unionOf>
+      </owl:allValuesFrom>
+      <owl:onProperty rdf:resource="actsOn"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="Actuation"/>
+    <rdfs:comment xml:lang="en">Actuation on the physical world, with an input that is a *boolean resource*, i.e., an [information resource](https://www.w3.org/TR/webarch/#def-information-resource) whose essential characteristics can be be conveyed in a boolean.&#xD;
+&#xD;
+This class combines boolean actuations such as on/off, open/close or start/stop, where no intermediary state is possible for the command.</rdfs:comment>
+    <rdfs:label xml:lang="en">Boolean Actuation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="BooleanProperty">
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:allValuesFrom rdf:parseType="Resource">
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <owl:onProperty rdf:resource="evaluatedValue"/>
+      </owl:allValuesFrom>
+      <owl:onProperty rdf:resource="evaluation"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+      <owl:onProperty rdf:resource="value"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="EnumeratedProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">A property that can be true of false. May be used to model commands like on/off.</rdfs:comment>
+    <rdfs:label xml:lang="en">Boolean Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+  <owl:Class rdf:about="BooleanSensor">
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:allValuesFrom rdf:parseType="Resource">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="FeatureOfInterest"/>
+          <owl:Class rdf:about="BooleanProperty"/>
+        </owl:unionOf>
+      </owl:allValuesFrom>
+      <owl:onProperty rdf:resource="observes"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="Sensor"/>
+    <rdfs:comment xml:lang="en">Sensor with an output that is a *boolean resource*, i.e., an [information resource](https://www.w3.org/TR/webarch/#def-information-resource) whose essential characteristics can be be conveyed in a boolean.&#xD;
+&#xD;
+This class combines boolean sensors that output on/off, open/close or start/stop, where no intermediary state is possible for the output.</rdfs:comment>
+    <rdfs:label xml:lang="en">Boolean Sensor</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="BooleanActuating">
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:allValuesFrom rdf:parseType="Resource">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="FeatureOfInterest"/>
+          <owl:Class rdf:about="BooleanProperty"/>
+        </owl:unionOf>
+      </owl:allValuesFrom>
+      <owl:onProperty rdf:resource="actsOn"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="Actuating"/>
+    <rdfs:comment xml:lang="en">Procedure of actuating on the physical world, with an input that is a *boolean resource*, i.e., an [information resource](https://www.w3.org/TR/webarch/#def-information-resource) whose essential characteristics can be be conveyed in a boolean.&#xD;
+&#xD;
+This class combines boolean actuating processes such as on/off, open/close or start/stop, where no intermediary state is possible for the command.</rdfs:comment>
+    <rdfs:label xml:lang="en">Boolean Actuating</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="EnumeratedProperty">
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:resource="Property"/>
+    <rdfs:comment xml:lang="en">A property that can have one of multiple enumerated values.</rdfs:comment>
+    <rdfs:label xml:lang="en">Enumerated Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="BooleanActuator">
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:allValuesFrom rdf:resource="BooleanProperty"/>
+      <owl:onProperty rdf:resource="actsOn"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="Actuator"/>
+    <rdfs:comment xml:lang="en">Actuator with an input that is a *boolean resource*, i.e., an [information resource](https://www.w3.org/TR/webarch/#def-information-resource) whose essential characteristics can be be conveyed in a boolean.&#xD;
+&#xD;
+This class combines boolean actuators such as on/off, open/close or start/stop, where no intermediary state is possible for the command.</rdfs:comment>
+    <rdfs:label xml:lang="en">Boolean Actuator</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+  <owl:ObjectProperty rdf:about="supportedByAPIStatus">
+    <rdfs:label xml:lang="en">links a feature of interest to its supported by API status, which is a boolean property.&#xD;
+&#xD;
+If the property is true, then the feature of interest is supported by the API. Else, it is not supported by the API.</rdfs:label>
+    <rdfs:domain rdf:resource="FeatureOfInterest"/>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <rdfs:range rdf:resource="Property"/>
+    <rdfs:range rdf:resource="BooleanProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">supported by API status</rdfs:label>
+    <vs:term_status>testing</vs:term_status>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="connectedStatus">
+    <rdfs:label xml:lang="en">links a feature of interest to its connected status, which is a boolean property.&#xD;
+&#xD;
+If the property is true, then the feature of interest is connected. Else, it is disconnected.</rdfs:label>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="BooleanProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <rdfs:range rdf:resource="Property"/>
+    <rdfs:label xml:lang="en">connected status</rdfs:label>
+    <rdfs:domain rdf:resource="FeatureOfInterest"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="onStatus"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="installedStatus">
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="Property"/>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdfs:range rdf:resource="BooleanProperty"/>
+    <rdfs:label xml:lang="en">installed status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">links a feature of interest to its installed status, which is a boolean property.&#xD;
+&#xD;
+If the property is true, then the feature of interest is installed. Else, it is not installed.</rdfs:label>
+    <rdfs:domain rdf:resource="FeatureOfInterest"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="recognizedByGatewayStatus">
+    <rdfs:range rdf:resource="BooleanProperty"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:domain rdf:resource="FeatureOfInterest"/>
+    <rdfs:label xml:lang="en">links a feature of interest to its recognized by the gateway status, which is a boolean property.&#xD;
+&#xD;
+If the property is true, then the feature of interest is recognized by the gateway. Else, it is not recognized by the Gateway.</rdfs:label>
+    <rdfs:label xml:lang="en">recognized  by gateway status</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <rdfs:range rdf:resource="Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="onStatus">
+    <rdfs:label xml:lang="en">links a feature of interest to its on status, which is a boolean property.&#xD;
+&#xD;
+If the property is true, then the feature of interest is on. Else, it is off.</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdfs:domain rdf:resource="FeatureOfInterest"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="BooleanProperty"/>
+    <rdfs:range rdf:resource="Property"/>
+    <rdfs:label xml:lang="en">on status</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="refreshedStatus">
+    <rdfs:domain rdf:resource="FeatureOfInterest"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">refreshed status</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <rdfs:range rdf:resource="Property"/>
+    <rdfs:label xml:lang="en">links a feature of interest to its refreshed status, which is a boolean property.&#xD;
+&#xD;
+If the property is true, then the feature of interest is refreshed. Else, it is unrefreshed.</rdfs:label>
+    <rdfs:range rdf:resource="BooleanProperty"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+  <owl:FunctionalProperty rdf:about="openStatus">
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="BooleanProperty"/>
+    <rdfs:label xml:lang="en">links a feature of interest to its open status, which is a boolean property.&#xD;
+&#xD;
+If the property is true, then the feature of interest is open. Else, it is close.</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="Property"/>
+    <rdfs:domain rdf:resource="FeatureOfInterest"/>
+    <rdfs:subPropertyOf rdf:resource="hasProperty"/>
+    <rdfs:label xml:lang="en">open status</rdfs:label>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="onServiceStatus">
+    <rdfs:subPropertyOf rdf:resource="onStatus"/>
+    <rdfs:domain rdf:resource="FeatureOfInterest"/>
+    <rdfs:label xml:lang="en">links a feature of interest to its on service status, which is a boolean property.&#xD;
+&#xD;
+If the property is true, then the feature of interest is on service. Else, it is out of service.</rdfs:label>
+    <rdfs:range rdf:resource="BooleanProperty"/>
+    <rdfs:range rdf:resource="Property"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">on service status</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="BooleanPropertyOntology"/>
+  </owl:FunctionalProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+</rdf:RDF>

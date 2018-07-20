@@ -1,0 +1,187 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:pep="https://w3id.org/pep/"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:seas="https://w3id.org/seas/"
+    xmlns:qudt-unit="http://data.qudt.org/qudt/owl/1.0.0/unit.owl#"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:gr="http://purl.org/goodrelations/v1#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:saref="http://ontology.tno.nl/saref#"
+    xmlns:ssn="http://www.w3.org/ns/ssn/"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:qudt="http://data.qudt.org/qudt/owl/1.0.0/qudt.owl#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="OfferingOntology">
+    <owl:versionInfo>v1.0</owl:versionInfo>
+    <owl:imports rdf:resource="PlayerOntology"/>
+    <owl:versionIRI rdf:resource="OfferingOntology-1.0"/>
+    <vann:preferredNamespaceUri rdf:resource=""/>
+    <dcterms:title xml:lang="en">The SEAS Offering ontology</dcterms:title>
+    <dcterms:contributor rdf:parseType="Resource">
+      <foaf:name>Hannu Järvinen</foaf:name>
+    </dcterms:contributor>
+    <dcterms:creator rdf:resource="http://www.maxime-lefrancois.info/me#"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2016-09-30</dcterms:modified>
+    <rdf:type>
+      <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </rdf:type>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2016-07-24</dcterms:issued>
+    <dcterms:description xml:lang="en">The SEAS Offering ontology defines offerings and transactions between players.&#xD;
+&#xD;
+Players may offer or seek for some offering, that includes evaluation of properties, or process executions.&#xD;
+&#xD;
+Players may be the seller or buyer of some transaction, that includes evaluation of properties, or process executions.</dcterms:description>
+    <owl:imports rdf:resource="/pep/pep-1.0"/>
+    <owl:imports rdf:resource="http://purl.org/goodrelations/v1"/>
+    <vann:preferredNamespacePrefix>seas</vann:preferredNamespacePrefix>
+    <dcterms:license rdf:resource="https://www.apache.org/licenses/LICENSE-2.0"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="Contract">
+    <rdfs:isDefinedBy rdf:resource="OfferingOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:someValuesFrom rdf:resource="/pep/ProcessExecution"/>
+      <owl:onProperty rdf:resource="includesEvaluation"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="/pep/ProcessExecutionContainer"/>
+    <rdfs:comment xml:lang="en">A contract is a container for transactions.</rdfs:comment>
+    <rdfs:label xml:lang="en">Contract</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Offering">
+    <rdfs:isDefinedBy rdf:resource="OfferingOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:someValuesFrom rdf:resource="/pep/ProcessExecution"/>
+      <owl:onProperty rdf:resource="includesEvaluation"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="http://purl.org/goodrelations/v1#Offering"/>
+    <rdfs:subClassOf rdf:resource="/pep/Process"/>
+    <rdfs:comment xml:lang="en">An offering is a process that is offered or sought for by a player.&#xD;
+&#xD;
+An offering may be linked through property `seas:includes` to the property evaluations that are included in the offering. For example, `&lt;player1&gt;` offers to pay 34 € to `&lt;player2&gt;` to receive 1 MWh.&#xD;
+&#xD;
+```&#xD;
+&lt;player1&gt; seas:moneyConnectionPoint &lt;connectionPoint1&gt; ;&#xD;
+  seas:electricalConnectionPoint &lt;connectionPoint2&gt; ;&#xD;
+  seas:offers &lt;offering&gt; .&#xD;
+&#xD;
+&lt;connectionPoint1&gt; seas:moneyBalance &lt;property1&gt; .&#xD;
+&lt;connectionPoint2&gt; seas:energyBalance &lt;property2&gt; .&#xD;
+&lt;property1&gt; seas:evaluation &lt;evaluation1&gt; .&#xD;
+&lt;property2&gt; seas:evaluation &lt;evaluation2&gt; .&#xD;
+&#xD;
+&lt;offering&gt; seas:outputIncludesEvaluation &lt;evaluation1&gt;, &lt;evaluation2&gt; .&#xD;
+&#xD;
+&lt;evaluation1&gt; seas:evaluatedValue "-34 €"^^cdt:currency .&#xD;
+&lt;evaluation2&gt; seas:evaluatedValue "1 MWh"^^cdt:ucum .&#xD;
+```&#xD;
+&#xD;
+&#xD;
+Figure below provides an overview of the concepts in this ontology:&#xD;
+&#xD;
+[![Overview of the Offering ontology](https://w3id.org/seas/offering.png)](https://w3id.org/seas/offering.png)&#xD;
+&#xD;
+&#xD;
+&#xD;
+</rdfs:comment>
+    <rdfs:label xml:lang="en">Offering</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+  <owl:Class rdf:about="Transaction">
+    <rdfs:isDefinedBy rdf:resource="OfferingOntology"/>
+    <rdfs:subClassOf rdf:parseType="Resource">
+      <owl:allValuesFrom rdf:resource="/pep/ProcessExecution"/>
+      <owl:onProperty rdf:resource="includesEvaluation"/>
+    </rdfs:subClassOf>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:comment xml:lang="en">A transaction is a contract execution. A transaction has a buyer, a seller, and may include zero or more evaluations.&#xD;
+&#xD;
+The transaction content is modeled by the included evaluations. In particular, the transaction price is modeled as the evaluation of a money flow between the buyer and the seller.&#xD;
+</rdfs:comment>
+    <rdfs:label xml:lang="en">Transaction</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="SubscriptionPriceSpecification">
+    <rdfs:isDefinedBy rdf:resource="OfferingOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#PriceSpecification"/>
+    <rdfs:comment xml:lang="en">Subscription based price specification. Price can be, e.g., monthly or yearly fee.</rdfs:comment>
+    <rdfs:label xml:lang="en">Subscription price specification</rdfs:label>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="seeks">
+    <rdfs:isDefinedBy rdf:resource="OfferingOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <owl:equivalentProperty rdf:resource="http://purl.org/goodrelations/v1#seeks"/>
+    <rdfs:range rdf:resource="Offering"/>
+    <rdfs:domain rdf:resource="Player"/>
+    <rdfs:comment xml:lang="en">Links an agent to a process it seeks.</rdfs:comment>
+    <rdfs:label xml:lang="en">seeks</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="offers">
+    <rdfs:isDefinedBy rdf:resource="OfferingOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <owl:equivalentProperty rdf:resource="http://purl.org/goodrelations/v1#offers"/>
+    <rdfs:range rdf:resource="Offering"/>
+    <rdfs:domain rdf:resource="Player"/>
+    <rdfs:comment xml:lang="en">Links an agent to a process it offers.</rdfs:comment>
+    <rdfs:label xml:lang="en">offers</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="outputIncludesEvaluation">
+    <rdfs:isDefinedBy rdf:resource="OfferingOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="Evaluation"/>
+    <rdfs:comment xml:lang="en">Links a transaction, contract or offering to the property evaluations its output includes (postconditions). More general transactions, contracts, or offerings can be described using property `pep:hasOutput`.</rdfs:comment>
+    <rdfs:label xml:lang="en">output includes evaluation</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="inputIncludesEvaluation">
+    <rdfs:isDefinedBy rdf:resource="OfferingOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="Evaluation"/>
+    <rdfs:comment xml:lang="en">Links a transaction, contract or offering to a property evaluations its input includes (preconditions). More general transactions, contracts, or offerings can be described using property `pep:hasInput`.</rdfs:comment>
+    <rdfs:label xml:lang="en">input includes evaluation</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="party">
+    <rdfs:isDefinedBy rdf:resource="OfferingOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="Player"/>
+    <rdfs:domain rdf:resource="Contract"/>
+    <rdfs:comment xml:lang="en">Links a contract to one of the parties that agreeed on the contract.</rdfs:comment>
+    <rdfs:label xml:lang="en">party</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+  <owl:FunctionalProperty rdf:about="buyer">
+    <rdfs:isDefinedBy rdf:resource="OfferingOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="Player"/>
+    <rdfs:domain rdf:resource="Transaction"/>
+    <rdfs:comment xml:lang="en">Links a transaction to the buyer.</rdfs:comment>
+    <rdfs:label xml:lang="en">buyer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="seller">
+    <rdfs:isDefinedBy rdf:resource="OfferingOntology"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="Player"/>
+    <rdfs:domain rdf:resource="Transaction"/>
+    <rdfs:comment xml:lang="en">Links a transaction to the seller.</rdfs:comment>
+    <rdfs:label xml:lang="en">seller</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+</rdf:RDF>
